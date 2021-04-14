@@ -1,0 +1,36 @@
+﻿<Window x:Class="cardapiolentesUI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:cardapiolentesUI"
+        mc:Ignorable="d"
+        Title="CADASTRO LENTES" Height="750" Width="1500" Loaded="Window_Loaded" Closed="Window_Closed">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="20" />
+            <ColumnDefinition Width="auto" />
+            <ColumnDefinition Width="auto" />
+            <ColumnDefinition Width="auto" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="20" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="20" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="20" />
+        </Grid.RowDefinitions>
+        <Button x:Name="btpesquisa" Grid.Column="1" Grid.Row="1" Content="PESQUISAR" Click="btpesquisa_Click"></Button>
+        <Button x:Name="brcadastro" Grid.Column="1" Grid.Row="2" Content="CADASTRAR" Click="brcadastro_Click"></Button>
+        <ComboBox x:Name="cbpesquisa" Grid.Column="2" Grid.Row="1" Grid.ColumnSpan="2">
+            <ComboBoxItem Content="CODIGO"></ComboBoxItem>
+            <ComboBoxItem Content="NOME"></ComboBoxItem>
+        </ComboBox>
+        <TextBox x:Name="txtpesquisa" Grid.Column="4" Grid.Row="1" ></TextBox>
+        <DataGrid x:Name="tabela" Grid.Row="4" Grid.Column="2" Grid.ColumnSpan="3" MouseDoubleClick="tabela_MouseDoubleClick" SelectionChanged="tabela_SelectionChanged"></DataGrid>
+        
+    </Grid>
+</Window>

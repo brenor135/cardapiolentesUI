@@ -1,0 +1,77 @@
+﻿<Window x:Class="cardapiolentesUI.cadastrolente"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:cardapiolentesUI"
+        mc:Ignorable="d"
+        Title="cadastrolente" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="20" />
+            <ColumnDefinition Width="50" />
+            <ColumnDefinition Width="auto" />
+            <ColumnDefinition Width="auto" />
+            <ColumnDefinition Width="20" />
+            <ColumnDefinition Width="auto" />
+            <ColumnDefinition Width="auto" />
+            <ColumnDefinition Width="20" />
+            <ColumnDefinition Width="auto" />
+            <ColumnDefinition Width="auto" />
+            <ColumnDefinition Width="20" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="20" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20" />
+            <RowDefinition Height="50" />
+            <RowDefinition Height="50" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="20" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="20" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="20" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="20" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="20" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="20" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="20" />
+        </Grid.RowDefinitions>
+        <TextBox x:Name="txtidlente" Grid.Row="1" Grid.Column="1" Visibility="Hidden" Text="0"></TextBox>
+        <Button x:Name="btsalvar" Grid.Column="1" Grid.Row="1" Content="SALVAR" Click="btsalvar_Click"></Button>
+        <Button x:Name="btvoltar" Grid.Column="1" Grid.Row="2" Content="VOLTAR" Click="btvoltar_Click"></Button>
+        <TextBlock Grid.Column="2" Grid.Row="5"> ATIVO </TextBlock>
+        <ComboBox x:Name="cbativo" Grid.Column="3" Grid.Row="5" Text="ATIVO"></ComboBox>
+        <TextBlock Grid.Column="5" Grid.Row="5"> CODIGO</TextBlock>
+        <TextBox x:Name="txtcodigo" Grid.Column="6" Grid.Row="5"></TextBox>
+        <TextBlock Grid.Column="2" Grid.Row="7"> NOME</TextBlock>
+        <TextBox x:Name="txtlentenome" Grid.Column="3" Grid.Row="7"></TextBox>
+        <TextBlock Grid.Column="5" Grid.Row="7"> PRAZO</TextBlock>
+        <TextBox x:Name="txtprazo" Grid.Column="6" Grid.Row="7"></TextBox>
+        <TextBlock Grid.Column="2" Grid.Row="9"> VALOR VENDA</TextBlock>
+        <TextBox x:Name="txtvalorvenda" Grid.Column="3" Grid.Row="9" LostFocus="txtvalorvenda_LostFocus"></TextBox>
+        <TextBlock Grid.Column="5" Grid.Row="9"> VALOR SUGERIDO</TextBlock>
+        <TextBox x:Name="txtvalorsugerido" Grid.Column="6" Grid.Row="9" LostFocus="txtvalorsugerido_LostFocus"></TextBox>
+        <TextBlock Grid.Column="2" Grid.Row="11"> MATERIAL</TextBlock>
+        <ComboBox x:Name="cbmaterial" Grid.Column="3" Grid.Row="11"></ComboBox>
+        <TextBlock Grid.Column="5" Grid.Row="11"> OBSERVAÇÃO</TextBlock>
+        <TextBox x:Name="txtobs" Grid.Column="6" Grid.Row="11"></TextBox>
+        <TextBlock Grid.Column="2" Grid.Row="13"> PIGMENTAÇÃO</TextBlock>
+        <ComboBox x:Name="cbpigmentacao" Grid.Column="3" Grid.Row="13"></ComboBox>
+        <TextBlock Grid.Column="5" Grid.Row="13"> FABRICANTE</TextBlock>
+        <ComboBox x:Name="cbfabricante" Grid.Column="6" Grid.Row="13"></ComboBox>
+        <TextBlock Grid.Column="2" Grid.Row="15"> CLASSE</TextBlock>
+        <ComboBox x:Name="cbclasse" Grid.Column="3" Grid.Row="15"></ComboBox>
+        <TextBlock Grid.Column="8" Grid.Row="5"> TIPO VISAO</TextBlock>
+        <ComboBox x:Name="cbtipovisao" Grid.Column="9" Grid.Row="5"></ComboBox>
+        <TextBlock Grid.Column="8" Grid.Row="7"> TIPO LENTE</TextBlock>
+        <ComboBox x:Name="cbtipolente" Grid.Column="9" Grid.Row="7"></ComboBox>
+        <TextBlock Grid.Column="8" Grid.Row="9"> MENU</TextBlock>
+        <ComboBox x:Name="cbtipomenu" Grid.Column="9" Grid.Row="9"></ComboBox>
+    </Grid>
+</Window>
